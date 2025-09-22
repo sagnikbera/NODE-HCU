@@ -5,6 +5,8 @@ const path = require('path')
 const port = 3000
 
 const server = http.createServer((req , res) => {
+    const filepath = path.join(__dirname, req.url === '/' ? "index.html" : "req.url" );
+    const extName = String(path.extname(filepath)).toLowerCase();
     
 });
 
