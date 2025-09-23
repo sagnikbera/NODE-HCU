@@ -12,7 +12,7 @@ const logger = new Logger();
 const logFile = "./eventLog.txt";
 
 const logToFile = (event) => {
-  const logMessage = `${new Date().toISOString()} - ${event.message}`;
+  const logMessage = `${new Date().toISOString()} - ${event.message} \n`;
   fs.appendFileSync(logFile, logMessage);
 };
 
